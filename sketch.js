@@ -1,4 +1,5 @@
 var fireworks = [];
+var firework;
 var gravity;
 var sound;
 
@@ -29,7 +30,7 @@ function draw() {
   background(0, 0, 0, 25);
 
   if (random(2) < 0.3) {
-    var firework = new Firework();
+    firework = new Firework();
     fireworks.push(firework);
   }
 
