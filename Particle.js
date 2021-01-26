@@ -13,7 +13,7 @@ function Particle(x, y, hu, firework) {
 
     this.applyForce = function (force) {
         this.acc.add(force);
-    }
+    };
 
     this.update = function () {
         if (!this.firework) {
@@ -32,7 +32,7 @@ function Particle(x, y, hu, firework) {
         } else {
             return false;
         }
-    }
+    };
 
     this.show = function () {
         colorMode(HSB);
